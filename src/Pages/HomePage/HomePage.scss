@@ -1,0 +1,16 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+@use "../../styles/global.scss" as *;
+
+.home-page {
+  &__container {
+    &--max-width {
+      // chage height later
+      background: var(--background);
+      color: var(--text-primary);
+      transition: all 0.5s;
+      height: 100vh;
+      padding: 1rem 1rem;
+    }
+  }
+}

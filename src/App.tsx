@@ -2,6 +2,7 @@ import "./styles/global.scss";
 import useLocalStorage from "use-local-storage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
+import HomePage from "./Pages/HomePage/HomePage";
 
 function App() {
   // Checks and stores the value of `matches` property on the MediaQueryList object, which is true or false depending on the property passed into the `window.matchMedia()` function.
@@ -23,7 +24,7 @@ function App() {
     <BrowserRouter>
       <Header theme={theme} switchTheme={switchTheme} />
       <Routes>
-        <Route path="/" />
+        <Route path="/" element={<HomePage theme={theme} />} />
       </Routes>
     </BrowserRouter>
   );
