@@ -1,0 +1,32 @@
+@use "../../styles/variables.scss" as *;
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/global.scss";
+
+.header {
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: all 0.5s;
+  &__container {
+    &--max-width {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    &--left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    &--right {
+      display: flex;
+    }
+  }
+  &__headshot {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+  }
+  &__title {
+    @include page-heading;
+  }
+}

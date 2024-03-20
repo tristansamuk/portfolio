@@ -10,6 +10,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --background: #fff;
+  --text-primary: #000;
 }
 
 // Themes
@@ -22,11 +24,4 @@ body {
 [data-theme="dark"] {
   --background: #121212;
   --text-primary: #fff;
-}
-
-.app {
-  color: var(--text-primary);
-  background-color: var(--background);
-  transition: all 0.5s;
-  height: 100vh;
 }
