@@ -1,6 +1,8 @@
 import "./Header.scss";
 import tristanHeadshot from "../../assets/images/tristan-samuk.jpg";
-// import useLocalStorage from "use-local-storage";
+import HamburgerMenuIcon from "../HamburgerMenuIcon/HamburgerMenuIcon";
+import MoonIcon from "../MoonIcon/MoonIcon";
+import SunIcon from "../SunIcon/SunIcon";
 
 type Props = {
   theme: string;
@@ -8,6 +10,10 @@ type Props = {
 };
 
 const Header = ({ theme, switchTheme }: Props) => {
+  let fill = "#000000";
+  if (theme === "dark") {
+    fill = "#FFFFFF";
+  }
   return (
     <header className="header" data-theme={theme}>
       <div className="header__container--max-width">
@@ -21,13 +27,17 @@ const Header = ({ theme, switchTheme }: Props) => {
         </div>
         <div className="header__container--left">
           <button className="header__hamburger">
-            Menu
-            {/* hamburger icon here */}
+            <HamburgerMenuIcon height={"16"} width={"16"} fill={fill} />
           </button>
-          <button className="header__theme-toggle" onClick={switchTheme}>
-            {/* conditional render: either sun or moon here */}
-            Theme
-          </button>
+          {theme === "dark" ? (
+            <button className="header__theme-toggle" onClick={switchTheme}>
+              <MoonIcon height={"16"} width={"16"} fill={fill} />
+            </button>
+          ) : (
+            <button className="header__theme-toggle" onClick={switchTheme}>
+              <SunIcon height={"16"} width={"16"} fill={fill} />
+            </button>
+          )}
         </div>
       </div>
     </header>

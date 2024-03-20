@@ -29,4 +29,14 @@
   &__title {
     @include page-heading;
   }
+  &__hamburger {
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: transparent;
+  }
+  &__theme-toggle {
+    border: none;
+    background-color: transparent;
+  }
 }
