@@ -1,8 +1,12 @@
 // Media Breakpoints
 
-$tablet-breakpoint: 768px;
-$desktop-breakpoint: 1280px;
+$breakpoint--tablet: 768px;
+$breakpoint--desktop: 1280px;
 
 // Colors
 
-// Spacing
+$background--default: #ffffff;
+$background--dark: #121212;
+$text-primary--default: #000000;
+$text-primary--dark: #ffffff;
+$button-color--default: #121212;
