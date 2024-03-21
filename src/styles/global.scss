@@ -15,11 +15,17 @@ body {
 // Themes
 
 :root {
-  --background: #fff;
-  --text-primary: #000;
+  --background: #ffffff;
+  --text-primary: #000000;
+  --button-fill: #121212;
+  --button-text: #ffffff;
+  --text-high-emphasis: 87%;
 }
 
 [data-theme="dark"] {
   --background: #121212;
-  --text-primary: #fff;
+  --text-primary: #ffffff;
+  --button-fill: #ffffff;
+  --button-text: #121212;
+  --text-high-emphasis: 87%;
 }

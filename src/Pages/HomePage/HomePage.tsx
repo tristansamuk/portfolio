@@ -21,7 +21,7 @@ const HomePage = ({ theme }: Props) => {
           If you're looking to hire a junior developer or need help building
           your website or app, feel free to reach out!
         </p>
-        <button>Email Me</button>
+        <button className="intro__button">Email Me</button>
       </section>
     </div>
   );

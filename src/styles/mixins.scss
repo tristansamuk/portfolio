@@ -17,14 +17,27 @@
 @mixin page-heading {
   font-size: 1rem;
   font-weight: 400;
+  opacity: var(--text-high-emphasis);
 }
 
 @mixin section-heading {
   font-size: 1.5rem;
   font-weight: 500;
+  opacity: var(--text-high-emphasis);
 }
 
 @mixin body-text {
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 400;
+  line-height: 1.5rem;
+  opacity: var(--text-high-emphasis);
+}
+
+@mixin button {
+  background-color: var(--button-fill);
+  color: var(--button-text);
+  width: fit-content;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
 }

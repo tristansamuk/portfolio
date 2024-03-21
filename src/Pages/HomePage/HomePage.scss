@@ -25,4 +25,8 @@
   &__text {
     @include body-text;
   }
+  &__button {
+    @include button;
+    transition: all 0.5s;
+  }
 }
