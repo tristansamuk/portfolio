@@ -1,4 +1,5 @@
 import "./HomePage.scss";
+import Work from "../../components/Work/Work";
 
 type Props = {
   theme: string;
@@ -23,6 +24,7 @@ const HomePage = ({ theme }: Props) => {
         </p>
         <button className="intro__button">Email Me</button>
       </section>
+      <Work />
     </div>
   );
 };

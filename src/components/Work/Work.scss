@@ -1,0 +1,14 @@
+@use "../../styles/mixins.scss" as *;
+@use "../../styles/variables.scss" as *;
+@use "../../styles/global.scss" as *;
+
+.work {
+  &__container {
+    &--section {
+      padding: 2rem 0;
+    }
+  }
+  &__heading {
+    @include section-heading;
+  }
+}
