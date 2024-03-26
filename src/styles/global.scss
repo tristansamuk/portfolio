@@ -16,16 +16,20 @@ body {
 
 :root {
   --background: #ffffff;
+  --card-background: #f5f5f5;
   --text-primary: #000000;
   --button-fill: #121212;
   --button-text: #ffffff;
   --text-high-emphasis: 87%;
+  --text-low-emphasis: 38%;
 }
 
 [data-theme="dark"] {
   --background: #121212;
+  --card-background: #1d1d1d;
   --text-primary: #ffffff;
   --button-fill: #ffffff;
   --button-text: #121212;
   --text-high-emphasis: 87%;
+  --text-low-emphasis: 38%;
 }
