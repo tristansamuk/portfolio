@@ -1,5 +1,6 @@
 import "./HomePage.scss";
 import Work from "../../components/Work/Work";
+import StargazingSVG from "../../components/StargazingSVG/StargazingSVG";
 
 type Props = {
   theme: string;
@@ -24,6 +25,9 @@ const HomePage = ({ theme }: Props) => {
         </p>
         <button className="intro__button">Email Me</button>
       </section>
+      <div className="home-page__container--svg">
+        <StargazingSVG fill={"#FFFFFF"} />
+      </div>
       <Work />
     </div>
   );
